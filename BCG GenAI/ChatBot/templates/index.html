@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Data Query</title>
+</head>
+<body>
+    <h1>Financial Data Query</h1>
+    <form action="/query" method="POST">
+        <label for="query">Enter your query:</label>
+        <input type="text" name="query" required>
+        <label for="year">Enter the fiscal year:</label>
+        <input type="number" name="year" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p>{{ response }}</p>
+</body>
+</html>
